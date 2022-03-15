@@ -8,8 +8,9 @@ public class Calculator {
         Addition adCalc = new Addition();
         Subtraction subCalc = new Subtraction();
         Multiplication multiCalc = new Multiplication();
+        Division divCalc = new Division();
         Scanner input = new Scanner(System.in);
-        int n1,n2,Total1,Total2,Total3;
+        int n1,n2,Total1,Total2,Total3,Total4;
         System.out.println("Enter n1");
         n1 = input.nextInt();
         System.out.println("Enter n2");
@@ -20,6 +21,8 @@ public class Calculator {
         System.out.println(Total2);
         Total3 = multiCalc.MultiplicationOperation(n1,n2);
         System.out.println(Total3);
+        Total4 = divCalc.DivisionOperation(n1,n2);
+        System.out.println(Total4);
 
     }
 }
